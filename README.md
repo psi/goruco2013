@@ -1,3 +1,5 @@
+## Try it out
+
 The following directions assume you're on OS X, have installed the [Zevo
 Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
 
