@@ -1,5 +1,7 @@
 # Take A Picture, It'll Last Longer!
 
+[Slides on Speaker Deck][https://speakerdeck.com/psi/take-a-picture-itll-last-longer-goruco-2013]
+
 These are the slides and supporting materials for a [talk][1] I gave at
 GoRuCo 2013 in NYC. The talk provides a methodology for using filesystem
 snapshotting and cloning features, like those found in ZFS, to allow
