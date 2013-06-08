@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 MYSQL_DIR  = "/usr/local/var/mysql"
 SOURCE_ZFS = "my_app/mysql"
 
@@ -15,10 +14,10 @@ if branch_checkout && new_branch !~ /\(no/
     new_zfs = "#{SOURCE_ZFS}-#{new_branch}"
   end
 
-  timestamp = Time.now.strftime("%Y%m%d%H%M")
-
   unless system("zfs list | grep -q #{new_zfs}")
     puts "Creating #{new_zfs}"
+    timestamp = Time.now.strftime("%Y%m%d%H%M")
+
     system "zfs snapshot #{SOURCE_ZFS}@#{timestamp}"
     system "zfs clone #{SOURCE_ZFS}@#{timestamp} #{new_zfs}"
   end
