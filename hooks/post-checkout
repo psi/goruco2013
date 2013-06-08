@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 MYSQL_DIR  = "/usr/local/var/mysql"
-SOURCE_ZFS = "se_app/mysql"
+SOURCE_ZFS = "my_app/mysql"
 
 branch_checkout = ARGV[2] == "1"
 new_branch = `git branch | grep '*' | awk '{print $2}'`.chomp
