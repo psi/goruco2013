@@ -1,8 +1,7 @@
 The following directions assume you're on OS X, have installed the [Zevo
 Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
 
-1. Make sure you have ZFS. On OS X, you can install [Zevo][1].
-2. Create a ZFS filesystem to put your MySQL data on.
+1. Create a ZFS filesystem to put your MySQL data on.
 
    ```
    # Make sure this is big enough to hold your entire database with some
@@ -13,7 +12,7 @@ Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
    $ zfs create my_app/mysql
    ```
 
-3. Move your MySQL data into ZFS and point your installation at it.
+2. Move your MySQL data into ZFS and point your installation at it.
  
    ```
    $ mysql.server stop
@@ -23,9 +22,9 @@ Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
    $ mysql.server start
    ```
 
-4. Put `hooks/post-checkout` into your application's `.git/hooks`
+3. Put `hooks/post-checkout` into your application's `.git/hooks`
    directory and ensure that it has executable permissions.
-5. Switch branches and watch the magic happen.
+4. Switch branches and watch the magic happen.
 
    ```
    $ git checkout -b new-thing
