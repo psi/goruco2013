@@ -1,7 +1,14 @@
-## Try it out
+# Take A Picture, It'll Last Longer!
+
+These are the slides and supporting materials for a [talk][1] I gave at
+GoRuCo 2013 in NYC. The talk provides a methodology for using filesystem
+snapshotting and cloning features, like those found in ZFS, to allow
+developers to branch their databases alongside their source code.
+
+## 
 
 The following directions assume you're on OS X, have installed the [Zevo
-Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
+Community Edition][2] port of ZFS & have MySQL installed via Homebrew.
 
 1. Create a ZFS filesystem to put your MySQL data on.
 
@@ -46,4 +53,5 @@ Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
    . SUCCESS!
    ```
 
-[1]: http://getgreenbytes.com/solutions/zevo/
+[1]: http://goruco.com/speakers/2013/harrington-jd/
+[2]: http://getgreenbytes.com/solutions/zevo/
