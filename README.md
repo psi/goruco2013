@@ -1,3 +1,6 @@
+The following directions assume you're on OS X, have installed the [Zevo
+Community Edition][1] port of ZFS & have MySQL installed via Homebrew.
+
 1. Make sure you have ZFS. On OS X, you can install [Zevo][1].
 2. Create a ZFS filesystem to put your MySQL data on.
 
@@ -10,8 +13,7 @@
    $ zfs create my_app/mysql
    ```
 
-3. Move your MySQL data into ZFS and point your installation at it. The
-   following assume you've installed MySQL via Homebrew.
+3. Move your MySQL data into ZFS and point your installation at it.
  
    ```
    $ mysql.server stop
