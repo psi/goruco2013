@@ -9,7 +9,9 @@ The following directions assume you're on OS X, have installed the [Zevo
 Community Edition][2] port of ZFS & have MySQL installed via Homebrew.
 
 **BACK UP YOUR MYSQL DATA BEFORE PROCEEDING, JUST IN CASE**
+
 **BACK UP YOUR MYSQL DATA BEFORE PROCEEDING, JUST IN CASE**
+
 **BACK UP YOUR MYSQL DATA BEFORE PROCEEDING, JUST IN CASE**
 
 1. Create a ZFS filesystem to put your MySQL data on.
